@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3946C9F19EF8848A6326C980 /* libPods-iOS_ClusterAnnotation_3D.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 544E9E2A7BEEF202588B7814 /* libPods-iOS_ClusterAnnotation_3D.a */; };
+		3AF7AD281E03C5D1001AE58A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7AD271E03C5D1001AE58A /* main.m */; };
+		3AF7AD2B1E03C5D1001AE58A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7AD2A1E03C5D1001AE58A /* AppDelegate.m */; };
+		3AF7AD331E03C5D1001AE58A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AF7AD321E03C5D1001AE58A /* Assets.xcassets */; };
+		3AF7AD361E03C5D1001AE58A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF7AD341E03C5D1001AE58A /* LaunchScreen.storyboard */; };
+		3AF7AD5E1E03C6E7001AE58A /* AnnotationClusterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7AD491E03C6E7001AE58A /* AnnotationClusterViewController.m */; };
+		3AF7AD601E03C6E7001AE58A /* PoiDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7AD4D1E03C6E7001AE58A /* PoiDetailViewController.m */; };
+		3AF7AD611E03C6E7001AE58A /* ClusterAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7AD501E03C6E7001AE58A /* ClusterAnnotation.m */; };
+		3AF7AD621E03C6E7001AE58A /* CoordinateQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7AD521E03C6E7001AE58A /* CoordinateQuadTree.m */; };
+		3AF7AD631E03C6E7001AE58A /* QuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7AD541E03C6E7001AE58A /* QuadTree.m */; };
+		3AF7AD641E03C6E7001AE58A /* ClusterAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7AD571E03C6E7001AE58A /* ClusterAnnotationView.m */; };
+		3AF7AD651E03C6E7001AE58A /* ClusterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7AD591E03C6E7001AE58A /* ClusterTableViewCell.m */; };
+		3AF7AD661E03C6E7001AE58A /* CustomCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7AD5B1E03C6E7001AE58A /* CustomCalloutView.m */; };
+		3AF7AD901E04234E001AE58A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7AD8F1E04234E001AE58A /* AppDelegate.swift */; };
+		3AF7AD971E04234E001AE58A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AF7AD961E04234E001AE58A /* Assets.xcassets */; };
+		3AF7AD9A1E04234E001AE58A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF7AD981E04234E001AE58A /* LaunchScreen.storyboard */; };
+		3AF7ADA11E042392001AE58A /* AnnotationClusterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7AD9F1E042392001AE58A /* AnnotationClusterViewController.swift */; };
+		3AF7ADA21E0423C1001AE58A /* PoiDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7AD4D1E03C6E7001AE58A /* PoiDetailViewController.m */; };
+		3AF7ADA31E0423C1001AE58A /* ClusterAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7AD501E03C6E7001AE58A /* ClusterAnnotation.m */; };
+		3AF7ADA41E0423C1001AE58A /* CoordinateQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7AD521E03C6E7001AE58A /* CoordinateQuadTree.m */; };
+		3AF7ADA51E0423C1001AE58A /* QuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7AD541E03C6E7001AE58A /* QuadTree.m */; };
+		3AF7ADA61E0423C1001AE58A /* ClusterAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7AD571E03C6E7001AE58A /* ClusterAnnotationView.m */; };
+		3AF7ADA71E0423C1001AE58A /* ClusterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7AD591E03C6E7001AE58A /* ClusterTableViewCell.m */; };
+		3AF7ADA81E0423C1001AE58A /* CustomCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7AD5B1E03C6E7001AE58A /* CustomCalloutView.m */; };
+		6A6C53B81E08CF1800739D47 /* iOS_ClusterAnnotation_3DUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6C53B71E08CF1800739D47 /* iOS_ClusterAnnotation_3DUITests.m */; };
+		6AAB3A6220C037DC006DDC85 /* CustomTCMapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AAB3A6120C037DC006DDC85 /* CustomTCMapAnnotationView.m */; };
+		6AAB3A6520C0381D006DDC85 /* PointModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AAB3A6420C0381D006DDC85 /* PointModel.m */; };
+		E5DCD0EBD5009218FD11BBDE /* libPods-iOS_ClusterAnnotation_3D-swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7FB35C2D5137EAC266EE59 /* libPods-iOS_ClusterAnnotation_3D-swift.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6A6C53BA1E08CF1800739D47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AF7AD1B1E03C5D1001AE58A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AF7AD221E03C5D1001AE58A;
+			remoteInfo = iOS_ClusterAnnotation_3D;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3813129DDA80BB5079C86E73 /* Pods-iOS_ClusterAnnotation_3D.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_ClusterAnnotation_3D.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_ClusterAnnotation_3D/Pods-iOS_ClusterAnnotation_3D.debug.xcconfig"; sourceTree = "<group>"; };
+		3AF7AD231E03C5D1001AE58A /* iOS_ClusterAnnotation_3D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_ClusterAnnotation_3D.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AF7AD271E03C5D1001AE58A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3AF7AD291E03C5D1001AE58A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3AF7AD2A1E03C5D1001AE58A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3AF7AD321E03C5D1001AE58A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3AF7AD351E03C5D1001AE58A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3AF7AD371E03C5D1001AE58A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AF7AD481E03C6E7001AE58A /* AnnotationClusterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationClusterViewController.h; sourceTree = "<group>"; };
+		3AF7AD491E03C6E7001AE58A /* AnnotationClusterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotationClusterViewController.m; sourceTree = "<group>"; };
+		3AF7AD4C1E03C6E7001AE58A /* PoiDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoiDetailViewController.h; sourceTree = "<group>"; };
+		3AF7AD4D1E03C6E7001AE58A /* PoiDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoiDetailViewController.m; sourceTree = "<group>"; };
+		3AF7AD4F1E03C6E7001AE58A /* ClusterAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterAnnotation.h; sourceTree = "<group>"; };
+		3AF7AD501E03C6E7001AE58A /* ClusterAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterAnnotation.m; sourceTree = "<group>"; };
+		3AF7AD511E03C6E7001AE58A /* CoordinateQuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoordinateQuadTree.h; sourceTree = "<group>"; };
+		3AF7AD521E03C6E7001AE58A /* CoordinateQuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoordinateQuadTree.m; sourceTree = "<group>"; };
+		3AF7AD531E03C6E7001AE58A /* QuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuadTree.h; sourceTree = "<group>"; };
+		3AF7AD541E03C6E7001AE58A /* QuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuadTree.m; sourceTree = "<group>"; };
+		3AF7AD561E03C6E7001AE58A /* ClusterAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterAnnotationView.h; sourceTree = "<group>"; };
+		3AF7AD571E03C6E7001AE58A /* ClusterAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterAnnotationView.m; sourceTree = "<group>"; };
+		3AF7AD581E03C6E7001AE58A /* ClusterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterTableViewCell.h; sourceTree = "<group>"; };
+		3AF7AD591E03C6E7001AE58A /* ClusterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterTableViewCell.m; sourceTree = "<group>"; };
+		3AF7AD5A1E03C6E7001AE58A /* CustomCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCalloutView.h; sourceTree = "<group>"; };
+		3AF7AD5B1E03C6E7001AE58A /* CustomCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCalloutView.m; sourceTree = "<group>"; };
+		3AF7AD5D1E03C6E7001AE58A /* APIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
+		3AF7AD8D1E04234E001AE58A /* iOS_ClusterAnnotation_3D-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS_ClusterAnnotation_3D-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AF7AD8F1E04234E001AE58A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3AF7AD961E04234E001AE58A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3AF7AD991E04234E001AE58A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3AF7AD9B1E04234E001AE58A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AF7AD9F1E042392001AE58A /* AnnotationClusterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotationClusterViewController.swift; sourceTree = "<group>"; };
+		3AF7ADA01E042392001AE58A /* Swift-Bridge-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Swift-Bridge-Header.h"; sourceTree = "<group>"; };
+		4B042D552FAD6B5D99ADD97E /* Pods-iOS_ClusterAnnotation_3D-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_ClusterAnnotation_3D-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_ClusterAnnotation_3D-swift/Pods-iOS_ClusterAnnotation_3D-swift.release.xcconfig"; sourceTree = "<group>"; };
+		544E9E2A7BEEF202588B7814 /* libPods-iOS_ClusterAnnotation_3D.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS_ClusterAnnotation_3D.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A6C53B51E08CF1800739D47 /* iOS_ClusterAnnotation_3DUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS_ClusterAnnotation_3DUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A6C53B71E08CF1800739D47 /* iOS_ClusterAnnotation_3DUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_ClusterAnnotation_3DUITests.m; sourceTree = "<group>"; };
+		6A6C53B91E08CF1800739D47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AAB3A6020C037DC006DDC85 /* CustomTCMapAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTCMapAnnotationView.h; sourceTree = "<group>"; };
+		6AAB3A6120C037DC006DDC85 /* CustomTCMapAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTCMapAnnotationView.m; sourceTree = "<group>"; };
+		6AAB3A6320C0381D006DDC85 /* PointModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointModel.h; sourceTree = "<group>"; };
+		6AAB3A6420C0381D006DDC85 /* PointModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointModel.m; sourceTree = "<group>"; };
+		7912C4F4E8063C21C463E2C0 /* Pods-iOS_ClusterAnnotation_3D.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_ClusterAnnotation_3D.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_ClusterAnnotation_3D/Pods-iOS_ClusterAnnotation_3D.release.xcconfig"; sourceTree = "<group>"; };
+		A5E2D4BA8FA2CC10EEFBFCB7 /* Pods-iOS_ClusterAnnotation_3D-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_ClusterAnnotation_3D-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_ClusterAnnotation_3D-swift/Pods-iOS_ClusterAnnotation_3D-swift.debug.xcconfig"; sourceTree = "<group>"; };
+		CD7FB35C2D5137EAC266EE59 /* libPods-iOS_ClusterAnnotation_3D-swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS_ClusterAnnotation_3D-swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD2A8A52B85A6A85EC6A3D48 /* libPods-iOS_ClusterAnnotation_3D_Swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS_ClusterAnnotation_3D_Swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AF7AD201E03C5D1001AE58A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3946C9F19EF8848A6326C980 /* libPods-iOS_ClusterAnnotation_3D.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AF7AD8A1E04234E001AE58A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5DCD0EBD5009218FD11BBDE /* libPods-iOS_ClusterAnnotation_3D-swift.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A6C53B21E08CF1800739D47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3AF7AD1A1E03C5D1001AE58A = {
+			isa = PBXGroup;
+			children = (
+				3AF7AD251E03C5D1001AE58A /* iOS_ClusterAnnotation_3D */,
+				3AF7AD8E1E04234E001AE58A /* iOS_ClusterAnnotation_3D-swift */,
+				6A6C53B61E08CF1800739D47 /* iOS_ClusterAnnotation_3DUITests */,
+				3AF7AD241E03C5D1001AE58A /* Products */,
+				6A499FB89E7E71D456730A17 /* Pods */,
+				DF7E5EC566538DB8C00BEFEF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3AF7AD241E03C5D1001AE58A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AF7AD231E03C5D1001AE58A /* iOS_ClusterAnnotation_3D.app */,
+				3AF7AD8D1E04234E001AE58A /* iOS_ClusterAnnotation_3D-swift.app */,
+				6A6C53B51E08CF1800739D47 /* iOS_ClusterAnnotation_3DUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AF7AD251E03C5D1001AE58A /* iOS_ClusterAnnotation_3D */ = {
+			isa = PBXGroup;
+			children = (
+				3AF7AD291E03C5D1001AE58A /* AppDelegate.h */,
+				3AF7AD2A1E03C5D1001AE58A /* AppDelegate.m */,
+				3AF7AD451E03C6E7001AE58A /* ClusterAnnotation */,
+				3AF7AD5C1E03C6E7001AE58A /* Configuration */,
+				3AF7AD321E03C5D1001AE58A /* Assets.xcassets */,
+				3AF7AD341E03C5D1001AE58A /* LaunchScreen.storyboard */,
+				3AF7AD371E03C5D1001AE58A /* Info.plist */,
+				3AF7AD261E03C5D1001AE58A /* Supporting Files */,
+			);
+			path = iOS_ClusterAnnotation_3D;
+			sourceTree = "<group>";
+		};
+		3AF7AD261E03C5D1001AE58A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AF7AD271E03C5D1001AE58A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3AF7AD451E03C6E7001AE58A /* ClusterAnnotation */ = {
+			isa = PBXGroup;
+			children = (
+				3AF7AD461E03C6E7001AE58A /* Demo */,
+				3AF7AD4E1E03C6E7001AE58A /* Model */,
+				3AF7AD551E03C6E7001AE58A /* View */,
+			);
+			path = ClusterAnnotation;
+			sourceTree = "<group>";
+		};
+		3AF7AD461E03C6E7001AE58A /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				3AF7AD471E03C6E7001AE58A /* Controller */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		3AF7AD471E03C6E7001AE58A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3AF7AD481E03C6E7001AE58A /* AnnotationClusterViewController.h */,
+				3AF7AD491E03C6E7001AE58A /* AnnotationClusterViewController.m */,
+				3AF7AD4C1E03C6E7001AE58A /* PoiDetailViewController.h */,
+				3AF7AD4D1E03C6E7001AE58A /* PoiDetailViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3AF7AD4E1E03C6E7001AE58A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6AAB3A6020C037DC006DDC85 /* CustomTCMapAnnotationView.h */,
+				6AAB3A6120C037DC006DDC85 /* CustomTCMapAnnotationView.m */,
+				3AF7AD4F1E03C6E7001AE58A /* ClusterAnnotation.h */,
+				3AF7AD501E03C6E7001AE58A /* ClusterAnnotation.m */,
+				3AF7AD511E03C6E7001AE58A /* CoordinateQuadTree.h */,
+				3AF7AD521E03C6E7001AE58A /* CoordinateQuadTree.m */,
+				3AF7AD531E03C6E7001AE58A /* QuadTree.h */,
+				3AF7AD541E03C6E7001AE58A /* QuadTree.m */,
+				6AAB3A6320C0381D006DDC85 /* PointModel.h */,
+				6AAB3A6420C0381D006DDC85 /* PointModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3AF7AD551E03C6E7001AE58A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3AF7AD561E03C6E7001AE58A /* ClusterAnnotationView.h */,
+				3AF7AD571E03C6E7001AE58A /* ClusterAnnotationView.m */,
+				3AF7AD581E03C6E7001AE58A /* ClusterTableViewCell.h */,
+				3AF7AD591E03C6E7001AE58A /* ClusterTableViewCell.m */,
+				3AF7AD5A1E03C6E7001AE58A /* CustomCalloutView.h */,
+				3AF7AD5B1E03C6E7001AE58A /* CustomCalloutView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3AF7AD5C1E03C6E7001AE58A /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				3AF7AD5D1E03C6E7001AE58A /* APIKey.h */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		3AF7AD8E1E04234E001AE58A /* iOS_ClusterAnnotation_3D-swift */ = {
+			isa = PBXGroup;
+			children = (
+				3AF7AD8F1E04234E001AE58A /* AppDelegate.swift */,
+				3AF7AD9F1E042392001AE58A /* AnnotationClusterViewController.swift */,
+				3AF7ADA01E042392001AE58A /* Swift-Bridge-Header.h */,
+				3AF7AD961E04234E001AE58A /* Assets.xcassets */,
+				3AF7AD981E04234E001AE58A /* LaunchScreen.storyboard */,
+				3AF7AD9B1E04234E001AE58A /* Info.plist */,
+			);
+			path = "iOS_ClusterAnnotation_3D-swift";
+			sourceTree = "<group>";
+		};
+		6A499FB89E7E71D456730A17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3813129DDA80BB5079C86E73 /* Pods-iOS_ClusterAnnotation_3D.debug.xcconfig */,
+				7912C4F4E8063C21C463E2C0 /* Pods-iOS_ClusterAnnotation_3D.release.xcconfig */,
+				A5E2D4BA8FA2CC10EEFBFCB7 /* Pods-iOS_ClusterAnnotation_3D-swift.debug.xcconfig */,
+				4B042D552FAD6B5D99ADD97E /* Pods-iOS_ClusterAnnotation_3D-swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6A6C53B61E08CF1800739D47 /* iOS_ClusterAnnotation_3DUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6A6C53B71E08CF1800739D47 /* iOS_ClusterAnnotation_3DUITests.m */,
+				6A6C53B91E08CF1800739D47 /* Info.plist */,
+			);
+			path = iOS_ClusterAnnotation_3DUITests;
+			sourceTree = "<group>";
+		};
+		DF7E5EC566538DB8C00BEFEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				544E9E2A7BEEF202588B7814 /* libPods-iOS_ClusterAnnotation_3D.a */,
+				FD2A8A52B85A6A85EC6A3D48 /* libPods-iOS_ClusterAnnotation_3D_Swift.a */,
+				CD7FB35C2D5137EAC266EE59 /* libPods-iOS_ClusterAnnotation_3D-swift.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AF7AD221E03C5D1001AE58A /* iOS_ClusterAnnotation_3D */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AF7AD3A1E03C5D1001AE58A /* Build configuration list for PBXNativeTarget "iOS_ClusterAnnotation_3D" */;
+			buildPhases = (
+				3A80B241C7A0410E696DA69C /* [CP] Check Pods Manifest.lock */,
+				3AF7AD1F1E03C5D1001AE58A /* Sources */,
+				3AF7AD201E03C5D1001AE58A /* Frameworks */,
+				3AF7AD211E03C5D1001AE58A /* Resources */,
+				764AD1E42792A7865A78526F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOS_ClusterAnnotation_3D;
+			productName = iOS_ClusterAnnotation_3D;
+			productReference = 3AF7AD231E03C5D1001AE58A /* iOS_ClusterAnnotation_3D.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3AF7AD8C1E04234E001AE58A /* iOS_ClusterAnnotation_3D-swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AF7AD9C1E04234E001AE58A /* Build configuration list for PBXNativeTarget "iOS_ClusterAnnotation_3D-swift" */;
+			buildPhases = (
+				18A6CF15DC983967739BFD87 /* [CP] Check Pods Manifest.lock */,
+				3AF7AD891E04234E001AE58A /* Sources */,
+				3AF7AD8A1E04234E001AE58A /* Frameworks */,
+				3AF7AD8B1E04234E001AE58A /* Resources */,
+				3F95B58E82C374CDA6D9E3FC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS_ClusterAnnotation_3D-swift";
+			productName = "iOS_ClusterAnnotation_3D-swift";
+			productReference = 3AF7AD8D1E04234E001AE58A /* iOS_ClusterAnnotation_3D-swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6A6C53B41E08CF1800739D47 /* iOS_ClusterAnnotation_3DUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A6C53BE1E08CF1800739D47 /* Build configuration list for PBXNativeTarget "iOS_ClusterAnnotation_3DUITests" */;
+			buildPhases = (
+				6A6C53B11E08CF1800739D47 /* Sources */,
+				6A6C53B21E08CF1800739D47 /* Frameworks */,
+				6A6C53B31E08CF1800739D47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A6C53BB1E08CF1800739D47 /* PBXTargetDependency */,
+			);
+			name = iOS_ClusterAnnotation_3DUITests;
+			productName = iOS_ClusterAnnotation_3DUITests;
+			productReference = 6A6C53B51E08CF1800739D47 /* iOS_ClusterAnnotation_3DUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AF7AD1B1E03C5D1001AE58A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = AutoNavi;
+				TargetAttributes = {
+					3AF7AD221E03C5D1001AE58A = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = SEWBU2EJ25;
+						ProvisioningStyle = Automatic;
+					};
+					3AF7AD8C1E04234E001AE58A = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = YMJ372W38W;
+						ProvisioningStyle = Manual;
+					};
+					6A6C53B41E08CF1800739D47 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = YMJ372W38W;
+						ProvisioningStyle = Manual;
+						TestTargetID = 3AF7AD221E03C5D1001AE58A;
+					};
+				};
+			};
+			buildConfigurationList = 3AF7AD1E1E03C5D1001AE58A /* Build configuration list for PBXProject "iOS_ClusterAnnotation_3D" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3AF7AD1A1E03C5D1001AE58A;
+			productRefGroup = 3AF7AD241E03C5D1001AE58A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AF7AD221E03C5D1001AE58A /* iOS_ClusterAnnotation_3D */,
+				3AF7AD8C1E04234E001AE58A /* iOS_ClusterAnnotation_3D-swift */,
+				6A6C53B41E08CF1800739D47 /* iOS_ClusterAnnotation_3DUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AF7AD211E03C5D1001AE58A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AF7AD361E03C5D1001AE58A /* LaunchScreen.storyboard in Resources */,
+				3AF7AD331E03C5D1001AE58A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AF7AD8B1E04234E001AE58A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AF7AD9A1E04234E001AE58A /* LaunchScreen.storyboard in Resources */,
+				3AF7AD971E04234E001AE58A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A6C53B31E08CF1800739D47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18A6CF15DC983967739BFD87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS_ClusterAnnotation_3D-swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A80B241C7A0410E696DA69C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS_ClusterAnnotation_3D-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F95B58E82C374CDA6D9E3FC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iOS_ClusterAnnotation_3D-swift/Pods-iOS_ClusterAnnotation_3D-swift-resources.sh",
+				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS_ClusterAnnotation_3D-swift/Pods-iOS_ClusterAnnotation_3D-swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		764AD1E42792A7865A78526F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iOS_ClusterAnnotation_3D/Pods-iOS_ClusterAnnotation_3D-resources.sh",
+				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS_ClusterAnnotation_3D/Pods-iOS_ClusterAnnotation_3D-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AF7AD1F1E03C5D1001AE58A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AAB3A6220C037DC006DDC85 /* CustomTCMapAnnotationView.m in Sources */,
+				3AF7AD661E03C6E7001AE58A /* CustomCalloutView.m in Sources */,
+				3AF7AD641E03C6E7001AE58A /* ClusterAnnotationView.m in Sources */,
+				3AF7AD611E03C6E7001AE58A /* ClusterAnnotation.m in Sources */,
+				3AF7AD5E1E03C6E7001AE58A /* AnnotationClusterViewController.m in Sources */,
+				3AF7AD621E03C6E7001AE58A /* CoordinateQuadTree.m in Sources */,
+				3AF7AD651E03C6E7001AE58A /* ClusterTableViewCell.m in Sources */,
+				3AF7AD2B1E03C5D1001AE58A /* AppDelegate.m in Sources */,
+				3AF7AD631E03C6E7001AE58A /* QuadTree.m in Sources */,
+				3AF7AD601E03C6E7001AE58A /* PoiDetailViewController.m in Sources */,
+				6AAB3A6520C0381D006DDC85 /* PointModel.m in Sources */,
+				3AF7AD281E03C5D1001AE58A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AF7AD891E04234E001AE58A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AF7ADA21E0423C1001AE58A /* PoiDetailViewController.m in Sources */,
+				3AF7ADA31E0423C1001AE58A /* ClusterAnnotation.m in Sources */,
+				3AF7ADA41E0423C1001AE58A /* CoordinateQuadTree.m in Sources */,
+				3AF7ADA51E0423C1001AE58A /* QuadTree.m in Sources */,
+				3AF7ADA61E0423C1001AE58A /* ClusterAnnotationView.m in Sources */,
+				3AF7ADA71E0423C1001AE58A /* ClusterTableViewCell.m in Sources */,
+				3AF7ADA81E0423C1001AE58A /* CustomCalloutView.m in Sources */,
+				3AF7ADA11E042392001AE58A /* AnnotationClusterViewController.swift in Sources */,
+				3AF7AD901E04234E001AE58A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A6C53B11E08CF1800739D47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A6C53B81E08CF1800739D47 /* iOS_ClusterAnnotation_3DUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A6C53BB1E08CF1800739D47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3AF7AD221E03C5D1001AE58A /* iOS_ClusterAnnotation_3D */;
+			targetProxy = 6A6C53BA1E08CF1800739D47 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3AF7AD341E03C5D1001AE58A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AF7AD351E03C5D1001AE58A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3AF7AD981E04234E001AE58A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AF7AD991E04234E001AE58A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3AF7AD381E03C5D1001AE58A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3AF7AD391E03C5D1001AE58A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3AF7AD3B1E03C5D1001AE58A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3813129DDA80BB5079C86E73 /* Pods-iOS_ClusterAnnotation_3D.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SEWBU2EJ25;
+				INFOPLIST_FILE = iOS_ClusterAnnotation_3D/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.iOS-ClusterAnnotation-3D";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		3AF7AD3C1E03C5D1001AE58A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7912C4F4E8063C21C463E2C0 /* Pods-iOS_ClusterAnnotation_3D.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SEWBU2EJ25;
+				INFOPLIST_FILE = iOS_ClusterAnnotation_3D/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.iOS-ClusterAnnotation-3D";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		3AF7AD9D1E04234E001AE58A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5E2D4BA8FA2CC10EEFBFCB7 /* Pods-iOS_ClusterAnnotation_3D-swift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = "iOS_ClusterAnnotation_3D-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.iOS-ClusterAnnotation-3D";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "249676f7-6dfc-4adf-ab62-14190fd9ac21";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "iOS_ClusterAnnotation_3D-swift/Swift-Bridge-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3AF7AD9E1E04234E001AE58A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B042D552FAD6B5D99ADD97E /* Pods-iOS_ClusterAnnotation_3D-swift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = "iOS_ClusterAnnotation_3D-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.iOS-ClusterAnnotation-3D";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a892512d-fe94-4702-b716-0b66880b936d";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatformInhouse;
+				SWIFT_OBJC_BRIDGING_HEADER = "iOS_ClusterAnnotation_3D-swift/Swift-Bridge-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6A6C53BC1E08CF1800739D47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = iOS_ClusterAnnotation_3DUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.iOS-ClusterAnnotation-3DUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d723e77c-6c92-4e6a-98d7-8717d0b88b87";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+				TEST_TARGET_NAME = iOS_ClusterAnnotation_3D;
+			};
+			name = Debug;
+		};
+		6A6C53BD1E08CF1800739D47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = iOS_ClusterAnnotation_3DUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.iOS-ClusterAnnotation-3DUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d723e77c-6c92-4e6a-98d7-8717d0b88b87";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+				TEST_TARGET_NAME = iOS_ClusterAnnotation_3D;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AF7AD1E1E03C5D1001AE58A /* Build configuration list for PBXProject "iOS_ClusterAnnotation_3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AF7AD381E03C5D1001AE58A /* Debug */,
+				3AF7AD391E03C5D1001AE58A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AF7AD3A1E03C5D1001AE58A /* Build configuration list for PBXNativeTarget "iOS_ClusterAnnotation_3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AF7AD3B1E03C5D1001AE58A /* Debug */,
+				3AF7AD3C1E03C5D1001AE58A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AF7AD9C1E04234E001AE58A /* Build configuration list for PBXNativeTarget "iOS_ClusterAnnotation_3D-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AF7AD9D1E04234E001AE58A /* Debug */,
+				3AF7AD9E1E04234E001AE58A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A6C53BE1E08CF1800739D47 /* Build configuration list for PBXNativeTarget "iOS_ClusterAnnotation_3DUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A6C53BC1E08CF1800739D47 /* Debug */,
+				6A6C53BD1E08CF1800739D47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3AF7AD1B1E03C5D1001AE58A /* Project object */;
+}
